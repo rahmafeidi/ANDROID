@@ -17,8 +17,8 @@ pipeline {
         echo "deploying"
         sh ' export ANDROID_SDK_ROOT=/home/ubuntu/Android/Sdk'
         sh './gradlew clean '
-        sh './gradlew assembleDebug '
-        sh './gradlew installDebug '
+        sh './gradlew build '
+        sh 'gradle assembleDebug '
       }
     }
   }
