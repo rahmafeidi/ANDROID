@@ -18,7 +18,7 @@ pipeline {
         sh ' chmod -R 777 .'
         sh ' export ANDROID_HOME=/home/ubuntu/Android/Sdk'
         sh ' export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools'
-        sh 'source ~/.bashrc  
+        sh 'source ~/.bashrc ' 
         sh './gradlew wrapper'
         sh './gradlew clean '
         sh './gradlew  assembleDebug '
