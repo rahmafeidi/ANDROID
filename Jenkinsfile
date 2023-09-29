@@ -20,7 +20,7 @@ pipeline {
         sh ' export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools' 
         sh './gradlew wrapper'
         sh './gradlew clean '
-        sh './gradlew  assembleDebug '
+        sh './gradlew  test '
       }
     }
   }
